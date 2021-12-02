@@ -1,0 +1,59 @@
+    def sumar(op1, op2):
+        res = op1 + op2
+        return res
+        
+    res = sumar(2 , 5)
+print(res)
+res = sumar(33 , 22)
+print(res)
+
+print("Hola","Jesus","Hola",sep="-")
+
+def imprime_cuadro():
+    print("****")
+    print("****")
+    print("****")
+    print("****")
+    #return none
+imprime_cuadro()
+
+#Invocar
+res = sumar(7 , 8)
+print(res)
+#Invocar la función pintar cuadro
+res = imprime_cuadro()
+print(res)
+
+def multiplicar(valor,veces):
+    c = valor * veces 
+    return c
+    
+res = multiplicar(5 , 5)
+print(res)
+
+res = multiplicar(None, 5)
+print(res)
+
+def multiplicar(valor,veces):
+    if valor == None:
+        c = 1
+    else:
+        c = valor * veces
+    return c
+    
+res = multiplicar(None,5)
+print(res)
+
+def dividir(op1,op2):
+    c = op1/op2
+    return c
+    
+num1= 25
+num2 = 5
+res = dividir(num1, num2)
+print(res)
+res = dividir(num2, num1)
+print(res)
+
+res = dividir(op2=num2, op1=num1)
+print(res)
